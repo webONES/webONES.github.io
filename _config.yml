@@ -1,0 +1,4 @@
+markdown: kramdown
+highlighter: pygments
+
+paginate: 10
