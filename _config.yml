@@ -1,4 +1,4 @@
 markdown: kramdown
 highlighter: pygments
-
+paginate_path: "/:num"
 paginate: 10

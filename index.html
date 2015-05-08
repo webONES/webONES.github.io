@@ -3,41 +3,55 @@ layout: default
 title: Quotes
 ---
 
-  <header>
-    <h1>Webones.GitHub.io Quotes</h1>
-    <p>webONES Blog at https://webones.github.io</p>
-  </header>
+<header>
+  <h1>Webones.GitHub.io Quotes</h1>
+  <p>webONES Blog at https://webones.github.io</p>
+</header>
 
-  <div id="banner">
-    <span id="logo"></span>
+<div id="banner">
+  <span id="logo"></span>
 
-    <a href="https://github.com/webONES" class="button fork"><strong>View On GitHub</strong></a>
-  </div><!-- end banner -->
+  <a href="https://github.com/webONES" class="button fork"><strong>View On GitHub</strong></a>
+</div><!-- end banner -->
 
-  <div class="wrapper">
-    <nav>
-      <ul></ul>
-    </nav>
-    <div class="space"></div>
+<div class="wrapper">
+  <nav>
+    <ul></ul>
+  </nav>
+  <div class="space"></div>
 
-    {% for quote in paginator.posts %}
-      <section>
-        <h3>
-          {{quote.title}}
-        </h3>
+  {% for quote in paginator.posts %}
+  <section>
+    <h3>
+      {{quote.title}}
+    </h3>
 
-        <blockquote>
-          <p>
-            {{quote.content}}
-          </p>
-        </blockquote>
-        <h5 class="author">
-          - {{quote.author}}
-        </h5>
-      </section>
-    {% endfor %}
+    <blockquote>
+      <p>
+        {{quote.content}}
+      </p>
+    </blockquote>
+    <h5 class="author">
+      - {{quote.author}}
+    </h5>
+  </section>
+  {% endfor %}
 
-    <footer>
-      <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
-    </footer>
+  <div class="pagination">
+    {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
+    {% else %}
+    <span class="previous">Previous</span>
+    {% endif %}
+    <span class="page_number">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+    {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+    {% else %}
+    <span class="next ">Next</span>
+    {% endif %}
   </div>
+
+  <footer>
+    <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
+  </footer>
+</div>
