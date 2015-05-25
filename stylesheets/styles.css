@@ -364,7 +364,7 @@ fieldset {
 
 /*
  * 1. Corrects color not being inherited in IE6/7/8/9
- * 2. Corrects text not wrapping in FF3 
+ * 2. Corrects text not wrapping in FF3
  * 3. Corrects alignment displayed oddly in IE6/7
  */
 legend {
@@ -588,7 +588,7 @@ code {
   text-shadow: 0px 1px 0px #000;
   margin: 0 4px;
   padding: 2px 6px;
-  background: #333;
+  /*background: #333;*/
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
   -o-border-radius: 2px;
@@ -599,7 +599,7 @@ code {
 
 pre {
   padding: 8px 15px;
-  background: #333333;
+  /*background: #333333;*/
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   -o-border-radius: 3px;
