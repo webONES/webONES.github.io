@@ -1,7 +1,7 @@
 ---
 layout: quote
 title: ¿quién necesita polimorfismo?
-author: SICEI
+author: Código real de SICEI.
 modified: 2015-05-24 23:33:05 -0500
 ---
 {% highlight java %}
@@ -14,5 +14,3 @@ modified: 2015-05-24 23:33:05 -0500
 {% endhighlight %}
 
 ¿Polimorfismo? ¿orientacíón a objetos? ¿qué es eso?
-
-Código real de SICEI.
