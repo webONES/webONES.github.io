@@ -15,9 +15,7 @@ title: Quotes
 </div><!-- end banner -->
 
 <div class="wrapper">
-  <nav>
-    <ul></ul>
-  </nav>
+  {% include navbar.html %}
   <div class="space"></div>
 
   {% for quote in paginator.posts %}
@@ -51,7 +49,5 @@ title: Quotes
     {% endif %}
   </div>
 
-  <footer>
-    <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
-  </footer>
+  {% include footer.html %}
 </div>
