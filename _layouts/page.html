@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body>
+    <header>
+      <h1>{{ page.title }}</h1>
+      <p>webONES Blog at https://webones.github.io</p>
+    </header>
+
+    <div id="banner">
+      <span id="logo"></span>
+
+      <a href="https://github.com/webONES" class="button fork"><strong>View On GitHub</strong></a>
+    </div><!-- end banner -->
+
+    <div class="wrapper">
+      {% include navbar.html %}
+      <div class="space"></div>
+
+      <section>
+        {{ content }}
+      </section>
+
+
+      {% include footer.html %}
+    </div>
+
+  </body>
+</html>
