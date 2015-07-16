@@ -7,4 +7,8 @@ tags: [software, sw, manifesto]
 ---
 ### The Software Engineering Manifesto by webONES FMAT
 
-> Un Ingeniero de Software nunca abrirá Dreamweaver.
+{% for manifesto in site.data.manifestos %}
+
+> {{manifesto}}
+
+{% endfor %}

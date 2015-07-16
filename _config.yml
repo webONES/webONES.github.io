@@ -5,12 +5,3 @@ paginate: 10
 gems:
   - jemoji
   # - jekyll-mentions
-
-links:
-  - title: Quotes
-    url: /
-    external: false
-
-  - title: SE Manifesto
-    url: /software-engineering-manifesto/
-    external: false

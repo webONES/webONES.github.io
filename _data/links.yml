@@ -1,0 +1,11 @@
+- title: Quotes
+  url: /
+  external: false
+
+- title: SE Manifesto
+  url: /software-engineering-manifesto/
+  external: false
+
+- title: CATI ISO
+  url: /cati-uady-iso-standards/
+  external: false
