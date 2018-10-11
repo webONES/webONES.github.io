@@ -1,7 +1,7 @@
 markdown: kramdown
-highlighter: pygments
 paginate_path: "/:num"
 paginate: 10
-gems:
+plugins:
   - jemoji
+  - jekyll-paginate
   # - jekyll-mentions
